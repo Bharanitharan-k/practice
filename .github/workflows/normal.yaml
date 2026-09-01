@@ -1,6 +1,6 @@
 name: print hello world
 
-on: workflow_dispatch
+on: push
 
 jobs:
   sayhello:
