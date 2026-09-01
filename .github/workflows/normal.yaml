@@ -7,9 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       -name: wellcome grettings
-      run: echo "hello,gtihub actions"
+       run: echo "hello,gtihub actions"
 
       -name: same like grettings
-      run: echo "wellcome"
+       run: echo "wellcome"
       
 
