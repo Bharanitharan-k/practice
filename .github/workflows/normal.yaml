@@ -1,12 +1,16 @@
-name: print hello world
+name: filtered push
 
-on: push
+on: 
+  push:
+    branches:
+      - main
+      - developer
 
 jobs:
   sayhello:
     runs-on: ubuntu-latest
     steps:
-      - name: wellcome grettings
+      - name: for specific branches
         run: echo "hello,gtihub actions"
 
       - name: same like grettings
