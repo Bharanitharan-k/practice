@@ -3,13 +3,13 @@ name: print hello world
 on: workflow_dispatch
 
 jobs:
-  say helllo:
+  sayhello:
     runs-on: ubuntu-latest
     steps:
-      -name: wellcome grettings
-       run: echo "hello,gtihub actions"
+      - name: wellcome grettings
+        run: echo "hello,gtihub actions"
 
-      -name: same like grettings
-       run: echo "wellcome"
+      - name: same like grettings
+        run: echo "wellcome"
       
 
