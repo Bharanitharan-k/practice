@@ -1,4 +1,15 @@
-name: practice pipe line
+name: print hello world
 
-on :
+on: workflow_dispatch
+
+jobs:
+  say helllo:
+    runs-on: ubuntu-latest
+    steps:
+      -name: wellcome grettings
+      run: echo "hello,gtihub actions"
+
+      -name: same like grettings
+      run: echo "wellcome"
+      
 
