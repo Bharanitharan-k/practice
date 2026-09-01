@@ -14,7 +14,7 @@
 // see README section 32.
 
 import { execSync } from 'node:child_process';
-
+import path from 'node:path';
 
 // BAD 1 — `process.cwd()` is an absolute path taken from the environment, and
 // interpolating it into a shell string hands the shell control of it. Run the
