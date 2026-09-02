@@ -7,7 +7,7 @@ on:
       - developer
     paths:
       - 'src/**'
-      - '.github/workflows/**' # Highly recommended for debugging updates
+      
 
 jobs:
   say-hello:
