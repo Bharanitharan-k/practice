@@ -2,7 +2,7 @@ name: schedule-base-trigger
 
 on:
   schedule:
-    - cron: '* * * * *'
+    - cron: '57 13 * * *'
 
 jobs:
   say-hello:
