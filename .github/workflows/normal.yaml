@@ -1,14 +1,8 @@
 name: 01 - Hello World
 
 on:
-  push:
-    branches:
-      - main
-      - developer
-    paths:
-      - 'src/**'
-      - 'src/*'
-      - 'src'
+  schedule:
+    - cron: '* * * * *'
 
 jobs:
   say-hello:
