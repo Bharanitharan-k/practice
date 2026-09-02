@@ -5,6 +5,8 @@ on:
     branches:
       - main
       - developer
+    paths:
+      - 'src/**'
 
 jobs:
   say-hello:                     
