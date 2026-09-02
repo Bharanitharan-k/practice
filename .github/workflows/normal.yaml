@@ -7,10 +7,11 @@ on:
       - developer
     paths:
       - 'src/**'
+      - '.github/workflows/**' # Highly recommended for debugging updates
 
 jobs:
-  say-hello:                     
-    runs-on: ubuntu-latest     
+  say-hello:
+    runs-on: ubuntu-latest
     steps:
       - name: Print a greeting
         run: echo "Hello, GitHub Actions! 👋"
