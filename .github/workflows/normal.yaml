@@ -1,22 +1,16 @@
-name: filtered push
+name: 01 - Hello World
 
-on: 
-  push:
-    branches:
-      - main
-      - developer
-    paths:
-      - 'src/**'
-      - '**.js'
+on: workflow_dispatch   # "Run workflow" button in the Actions tab (manual trigger)
 
 jobs:
-  sayhello:
-    runs-on: ubuntu-latest
+  say-hello:                     # <- job id (you choose this name)
+    runs-on: ubuntu-latest       # <- GitHub-hosted Linux runner
     steps:
-      - name: for specific branches
-        run: echo "hello,gtihub actions"
+      - name: Print a greeting
+        run: echo "Hello, GitHub Actions! 👋"
 
-      - name: same like grettings
-        run: echo "wellcome"
-      
-
+      - name: Print multiple lines
+        run: |
+          echo "This step runs several shell commands."
+          echo "Today's runner is: $RUNNER_OS"
+          echo "The repository is: $GITHUB_REPOSITORY"
