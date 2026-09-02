@@ -6,7 +6,8 @@ on:
       - main
       - developer
     paths:
-      - src  
+      - 'src/**'
+      - '**.js'
 
 jobs:
   sayhello:
