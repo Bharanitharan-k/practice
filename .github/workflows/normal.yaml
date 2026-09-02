@@ -7,7 +7,7 @@ on:
       - developer
     paths:
       - 'src/**'
-      
+
 jobs:
   say-hello:
     runs-on: ubuntu-latest
